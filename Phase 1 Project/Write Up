@@ -1,0 +1,40 @@
+Write Up: 
+• In first we have got the time sheet using Agile Scrum. 
+• We are initiating sprint plan according to the project. 
+• We have created a Git hub account to track the prototype frequently. 
+• And using Git we can track the issue and maintain milestones for each phase of the prototype. 
+• In this program, user is asked to enter the number of elements that he wishes to enter. 
+• Based on the input we have declared an int array and then we are accepting all the numbers input by user and storing them in the array. 
+• Once we have all the numbers stored in the array, we are sorting them using nested for loop. 
+• Sorting and Searching is one of the most vital topics in DSA. 
+• Storing and retrieving information is one of the most common application of computers now-a-days. 
+• According to time the amount of data and information stored and accessed via computer has turned to huge databases. 
+• So many techniques and algorithms have been developed to efficiently maintain and process information in databases. 
+• The processes of looking up a particular data record in the database is called searching. The process of ordering the records in a database is called Sorting. 
+• Sorting and searching together constitute a major area of study in computational methods. Both of them are very important field of study in data structure and algorithms. 
+• To Sort files in ascending order. We need to implement a Comparator and pass it to the Arrays sort method. In the compare method you need to extract the number from each filename a then compare the numbers. 
+• The reason we get the output is that sorting happens alphanumerically 
+• Here a is a very basic way of doing it. This code uses simple String-operation to extract the numbers. This works if you know the format of the filename, in your case Spectrum_<number>.txt. A better way of doing the extraction is to use regular expression.
+• Business level operation to design a data structure that supports the following operations in Θ(1) time. 
+insert(x): Inserts an item x to the data structure if not already present. 
+remove(x): Removes item x from the data structure if present. search(x):
+Searches an item x in the data structure. 
+getRandom(): Returns a random element from current set of elements 
+• We can use hashing to support first 3 operations in Θ(1) time. How to do the 4th operation? The idea is to use a resizable array (ArrayList in Java, vector in C) together with hashing. Resizable arrays support insert in Θ(1) amortized time complexity. To
+implement getRandom(), we can simply pick a random number from 0 to size-1 (size is the number of current elements) and return the element at that index. The hash map stores array values as keys and array indexes as values. 
+• Following are detailed operations. 
+Insert(x) 
+1) Check if x is already present by doing a hash map lookup. 
+2) If not present, then insert it at the end of the array. 
+3) Add in the hash table also, x is added as key and last array index as the index. 
+Remove(x) 
+1) Check if x is present by doing a hash map lookup. 
+2) If present, then find its index and remove it from a hash map. 
+3) Swap the last element with this element in an array and remove the last element. Swapping is done because the last element can be removed in O(1) time. 
+4) Update index of the last element in a hash map. 
+Get Random () 
+1) Generate a random number from 0 to last index. 
+2) Return the array element at the randomly generated index. 
+Search(x)
+Do a lookup for x in hash map. 
+Below is the implementation of the data structure.

@@ -133,7 +133,7 @@ public class VirtualKey
 	System.out.println(ab);
 	System.out.println("--------------------------");
 	
-	String DN = "Developer Name : Prajval Raju Bhale.\nDesignation : Java Developer.\nDate : 05/05/2022";
+	String DN = "Developer Name : Sriram SP\nDesignation : Assosiate.\nDate : 05/05/2022";
 	System.out.println(DN);
 	
 	try (Scanner console = new Scanner(System.in)) 
